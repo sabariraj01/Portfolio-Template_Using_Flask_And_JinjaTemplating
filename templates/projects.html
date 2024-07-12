@@ -1,82 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            height:50%;
-            margin: 0 auto;
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        .project {
-            background-color: #fff;
-            margin: 20px 0;
-            height: 150px;
-            padding: 20px;
-            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-            border-radius: 15px;
-            transition: all 0.5s ease-in-out;
-            text-align: center;
-            justify-content :center;
-        }
-        .project:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
-            color:red;
-            background-color: black;
-        }
-        .project h2 {
-            margin-top: 0;
-            text-align: center;
-            justify-content :center;
-        }
-        .project p {
-            
-            display: none;
-            
-        }
-        .project:hover p {
-            color:whitesmoke;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>My Projects</h1>
-        </div>
-        <div class="project">
-            <h2>Plant Disease Detection</h2>
-            <p><br>An innovative and impactful application that leverages advanced technologies to monitor 
-                and identify diseases affecting crops. The goal 
-                is to classify images of plants into different classes, such as "Healthy" or "Diseased."
-            </p>
-        </div>
-        <div class="project">
-            <h2>Anomaly detection</h2>
-            <p><br>A classifier project from ML. The goal 
-                is to classify images of plants into different classes like "Benyns" 
-                and and other 12 "Anomaly" classes in IOT-23 Dataset.
-            </p>
-        </div>
-        <!-- Add more projects as needed -->
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>My Projects</h1>
     </div>
-</body>
-</html>
+
+    <div class="project">
+        <h2>Mental Health Care Chatbot</h2>
+        <p>This Hybrid MERN-Flask architecture project has demonstrated the development of a
+            conversational Chatbot using NLP and Deep Learning techniques and capable 
+            of understanding and responding to a wide array of user inputs limited to MENTAL-HEALTH.
+        </p>
+        <a href="https://github.com/sabariraj01/Mental-Health-Care_Chatbot" class="btn" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+        <h2>Pneumonia Detection Using CNN</h2>
+        <p>This project leverages deep learning techniques like CNN to assist in the early diagnosis of
+             pneumonia, potentially aiding medical professionals and improving patient outcomes.
+        </p>
+        <a href="https://github.com/sabariraj01/Pneumonia_Detection_Using-CNN" class="btn" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+        <h2>Colour Detection</h2>
+        <p>
+            This Project leverages computer vision and the OpenCV library to facilitate interactive color detection
+             in digital images. Users can double-click on an image, and the script extracts the selected color's RGB 
+             values and provides the corresponding color name from a predefined color database.
+        </p>
+        <a href="https://github.com/sabariraj01/Color-Detection" class="btn" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+        <h2>Portfolio using Flask</h2>
+        <p>
+            This project demonstrates the development of a portfolio website using Flask and Jinja Templating, a popular Python
+            web framework. The website features a responsive design, allowing it to adapt to different screen sizes and 
+            devices. 
+        </p>
+        <a href="https://github.com/sabariraj01/Portfolio-Template_Using_Flask_And_JinjaTemplating" class="btn" target="_blank">View</a>
+    </div>
+
+
+    
+
+</div>
+{% endblock %}
+
+
+

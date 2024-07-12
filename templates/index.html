@@ -1,58 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">    
+{% endblock %}
 
-<body>
-    <div id="main">
-        <div id="page">
-            <div id="nav">
-                <div id="center-nav">
-                    <br>
-                    <a href="{{ url_for('about') }}">About</a>
-                    <a href="{{ url_for('project') }}">Projects</a>
-                    <a href="{{ url_for('contact') }}">Contact</a>
-                </div>
-            </div>
-
-            <img src="./static/prof2Copy.jpg" alt="">
-            <div id="text">
-                <h2>Hello!</h2>
-                <h1>
-                    I'm
-                    <br>
-                    <h1 id="typing"></h1>
-                </h1>
+{% block content %}
+<div id="main">
+    <div id="page">
+        <img src="./static/images/picture2.jpg" alt="Profile Image">
+        <div id="text">
+            <h2>Hello!</h2>
+            <h1>
+                I'm
                 <br>
-                <h4>
-                    A Computer Science enthusiast at SRM University AP, passionate about delving into the vast realms of
-                    Big Data and AI/ML.
-                </h4>
-            </div>
+                <h1 id="typing"></h1>
+            </h1>
+            <br>
+            <h4>
+                A Computer Science enthusiast at SRM University AP, passionate about delving into the vast realms of
+                MERN Stack and AI/ML.
+            </h4>
         </div>
     </div>
-    <script>
-        var text = 'Sabari Raj.!'; // the text to be typed
-        var delay = 200; // the base delay in milliseconds between each character
-        var randomness = 100; // the maximum random additional delay added or subtracted from the base delay
+</div>
+<script src="{{ url_for('static', filename='js/typeEffect.js') }}"></script>
+{% endblock %}
 
-        var i = 0;
-        function type() {
-            if (i < text.length) {
-                document.getElementById("typing").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, delay + Math.random() * randomness * 2 - randomness);
-            }
-        }
-        type();
 
-    </script>
-</body>
 
-</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 80%;
+    height:50%;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 2%;
+}
+
+.project {
+    background-color: #fff; 
+    margin: 20px 0;
+    height: 150px;
+    padding: 8px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
+    color:red;
+    background-color: black;
+    display: inline-block;
+}
+
+.project h2 {
+    transition: margin-top 0.3s ease-in-out; 
+}
+
+.project p {
+    display: none; 
+}
+.project:hover p {
+    color:whitesmoke;
+    display: block;
+}
+
+.project .btn {
+    display: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project:hover .btn {
+    display: inline-block; 
+}
+
+
+.project .btn:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    background-color: red;
+    text-decoration: none;
+}
+
+.project .btn:active {
+    transform: translateY(0);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}

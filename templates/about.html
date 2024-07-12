@@ -1,122 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            perspective: 1000px;
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-        .profile-image img {
-            width: 100%;
-            height: auto;
-        }
-        .card {
-            position: relative;
-            width: 100%;
-            height: 150px;
-            margin-top: 20px;
-            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-            border-radius: 15px;
-            transform-style: preserve-3d;
-            transition: transform 1s;
-        }
-        .card:hover {
-            transform: rotateY(180deg);
-        }
-        .face {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .front {
-            background-color: #fff;
-        }
-        .back {
-            background-color: #333;
-            color: #fff;
-            transform: rotateY(180deg);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>About Me</h1>
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>About Me</h1>
+    </div>
+    <div class="profile-image">
+        <img src="static/images/picture1.jpeg" alt="Profile Image">
+    </div>
+    <div class="card">
+        <div class="face front">
+            <h2>About</h2>
         </div>
-        <div class="profile-image">
-            <img src="static/prCopy.jpeg" alt="Profile Image">
-        </div>
-        <div class="card">
-            <div class="face front">
-                <h2>About</h2>
-            </div>
-            <div class="face back">
-                <h1>Sabari Raj</h1>
-                <p>As a person with a diverse skill set, I work in the realms of AI, ML, and Big Data. My expertise 
-                    includes ML model training, data analysis, data preprocessing, encoding, and proficiency in 
-                    programming languages such as Python and Java. Additionally, I have a solid foundation in web 
-                    technologies like HTML, CSS, and Flask, along with database management using MySQL. 
-                    This unique combination of skills empowers me to navigate the intricate landscape of artificial 
-                    intelligence, machine learning, and big data analytics effectively.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face front">
-                <h2>Skills</h2>
-            </div>
-            <div class="face back">
-                <p>ML-Model Training, Data analysis, Data Preprocessing, Encoding, Python, Java, HTML, Flask, MySQL</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face front">
-                <h2>Experience</h2>
-            </div>
-            <div class="face back">
-                <p>Amazon ML Summer School participant, Fall-2023</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face front">
-                <h2>Education</h2>
-            </div>
-            <div class="face back">
-                <p>B.Tech in CSE, SRM University AP, 2021-25 <br> Psychology(Minor), SRM University, 2023-25</p>
-            </div>
+        <div class="face back">
+            <h1>Sabari Raj</h1>
+            <p>As a person with a diverse skill set, I work in the realms of AI & ML, and MERN Stack. My expertise 
+                includes ML model training, data analysis, data preprocessing, encoding, and proficiency in 
+                programming languages such as Python and Java. Additionally, I have a solid foundation in web 
+                technologies like HTML, CSS, and Flask, along with database management using MySQL. 
+            </p>
         </div>
     </div>
-</body>
-</html>
+    <div class="card">
+        <div class="face front">
+            <h2>Skills</h2>
+        </div>
+        <div class="face back">
+            <p>MERN Stack | Machine Learning | Node | Express | Flask | Python | C++ | C | MySQL | MongoDB</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <h2>Experience</h2>
+        </div>
+        <div class="face back">
+            <p>Amazon ML Summer School participant, Fall-2023</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <h2>Education</h2>
+        </div>
+        <div class="face back">
+            <p>B.Tech in CSE, SRM University AP, 2021-25 <br> Psychology(Minor), SRM University, 2023-25</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
