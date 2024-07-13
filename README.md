@@ -7,75 +7,61 @@ This is a personal portfolio website showcasing projects, experience, and contac
 
 
 # 🌟 Features
-**Home** : Introduction and overview of skills.
-
-**About** : Detailed information about background and experience.
-
-**Projects** : Showcase of various projects with descriptions and links.
-
-**Contact** : Form to get in touch.
+- **Home** : Introduction and overview of skills.
+- **About** : Detailed information about background and experience.
+- **Projects** : Showcase of various projects with descriptions and links.
+- **Contact** : Form to get in touch.
 
 
 # 📦 Technologies Used
-**Flask** : Python web framework for backend.
- 
-**HTML** : Markup language for creating the website structure.
-
-**CSS** : Styling the website.
-
-**JavaScript** : Adding interactivity to the website.
-
-**Font Awesome** : Icons library used for adding icons.
+- **Flask** : Python web framework for backend.
+- **HTML** : Markup language for creating the website structure.
+- **CSS** : Styling the website.
+- **JavaScript** : Adding interactivity to the website.
+- **Font Awesome** : Icons library used for adding icons.
 
 
 # 🛠 Installation and Setup
-**Clone the repository** :
+**Clone the repository** 
         
         git clone https://github.com/yourusername/portfolio.git
 
-**Create a virtual environment** :
+**Create a virtual environment** 
 
         python -m venv venv
 
-**Activate the virtual environment** :
+**Activate the virtual environment** 
 
-* On Windows :
+- * On Windows 
         
         venv\Scripts\activate
 
-* On macOS/Linux:
+- * On macOS/Linux
 
         source venv/bin/activate
 
-**Install dependencies** :
+**Install dependencies** 
 
         pip install -r requirements.txt
 
-**Run the application** :
+**Run the application** 
 
         python app.py
 
 
 # ⚙️ Customization 
-**Logo and Favicon** : Replace the logo and favicon in the static/images/ directory.
-
-**Content** : Update content in the HTML files within the templates/ directory.
-
-**Styles** : Customize styles in the static/css/styles.css file.
-
-**Scripts** : Add or modify JavaScript in the static/js/typing.js file.
+- **Logo and Favicon** : Replace the logo and favicon in the static/images/ directory.
+- **Content** : Update content in the HTML files within the templates/ directory.
+- **Styles** : Customize styles in the static/css/styles.css file.
+- **Scripts** : Add or modify JavaScript in the static/js/typing.js file.
 
 
 # 📂 Usage
-**Portfolio** : Overview of personal skills and a brief introduction.
-
-**Home** : General information and welcome message.
-
-**About** : Detailed background information.
-
-**Projects** : Gallery of projects with descriptions and links.
-
-**Contact** : Contact form for visitors to get in touch.
+- **Portfolio** : Overview of personal skills and a brief introduction.
+- **Home** : General information and welcome message.
+- **About** : Detailed background information.
+- **Projects** : Gallery of projects with descriptions and links.
+- **Contact** : Contact form for visitors to get in touch.
 
 
 # 🤝 Contributing
