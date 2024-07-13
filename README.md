@@ -1,5 +1,10 @@
-# Portfolio Website
+# ✨ Portfolio Website ✨
+![image](https://github.com/user-attachments/assets/9db299cb-7b7a-4b6e-8d11-08833b80c1d3)
+
+
+## 📋 Project Overview
 This is a personal portfolio website showcasing projects, experience, and contact information. The website is built using Flask for backend, Jinja as Templating Engine and HTML, CSS, and JavaScript for frontend.
+
 
 # Features
 **Home** : Introduction and overview of skills.
@@ -11,9 +16,9 @@ This is a personal portfolio website showcasing projects, experience, and contac
 **Contact** : Form to get in touch.
 
 
-# Technologies Used
+# 📦 Technologies Used
 **Flask** : Python web framework for backend.
-
+ 
 **HTML** : Markup language for creating the website structure.
 
 **CSS** : Styling the website.
@@ -23,7 +28,7 @@ This is a personal portfolio website showcasing projects, experience, and contac
 **Font Awesome** : Icons library used for adding icons.
 
 
-# Installation
+# 🛠 How to Get Started?
 **Clone the repository** :
         
         git clone https://github.com/yourusername/portfolio.git
@@ -73,11 +78,11 @@ This is a personal portfolio website showcasing projects, experience, and contac
 **Contact** : Contact form for visitors to get in touch.
 
 
-# Contributing
-Feel free to fork the repository and submit pull requests. Contributions are welcome!
+# 🤝 Contributing
+Feel free to fork the repository and submit pull requests. Contributions are welcome! 
 
 # License
 This project is licensed under the [MIT LICENSE](LICENSE)
 
 # Portfolio link : 
-https://sabariraj-portfolio.onrender.com
+✨ https://sabariraj-portfolio.onrender.com ✨
